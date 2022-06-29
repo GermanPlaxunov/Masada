@@ -14,6 +14,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <spring-boot.version>2.7.1</spring-boot.version>
         <lombok.version>1.18.24</lombok.version>
+        <mysql-connector.version>8.0.29</mysql-connector.version>
     </properties>
 
     <dependencyManagement>
@@ -47,6 +48,19 @@
                 <version>${spring-boot.version}</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+
+            <!-- Datasource Dependencies -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector.version}</version>
+            </dependency>
+
 
             <!-- Tools Dependencies -->
             <dependency>
