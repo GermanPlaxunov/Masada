@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /masada/marketstack
+
+api:
+  url: ${MARKETSTACK_API_URL:https://api.marketstack.com/v1}
+  key: ${MARKETSTACK_API_KEY:12f3000470ebddaf371dc910c48cbe85}
