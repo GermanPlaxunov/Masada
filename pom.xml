@@ -9,6 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0</version>
 
+    <modules>
+        <module>masada-parent</module>
+        <module>masada-marketstack</module>
+    </modules>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
