@@ -12,6 +12,7 @@
     <modules>
         <module>masada-parent</module>
         <module>masada-marketstack</module>
+        <module>masada-engine</module>
     </modules>
 
     <properties>

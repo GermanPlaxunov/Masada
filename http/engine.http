@@ -1,0 +1,4 @@
+POST http://localhost:8080/masada/engine/send
+Content-Type: application/x-www-form-urlencoded
+
+message=Message from engine
