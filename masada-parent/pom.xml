@@ -14,6 +14,8 @@
         <maven.compiler.target>17</maven.compiler.target>
         <spring-boot.version>2.7.1</spring-boot.version>
         <lombok.version>1.18.24</lombok.version>
+        <spring-kafka.version>2.8.7</spring-kafka.version>
+        <liquibase.version>4.12.0</liquibase.version>
         <mysql-connector.version>8.0.29</mysql-connector.version>
     </properties>
 
@@ -53,6 +55,17 @@
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka-test</artifactId>
+                <version>${spring-kafka.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <!-- Datasource Dependencies -->
             <dependency>
@@ -61,13 +74,17 @@
                 <version>${mysql-connector.version}</version>
             </dependency>
 
-
             <!-- Tools Dependencies -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>${liquibase.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
